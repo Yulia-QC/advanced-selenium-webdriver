@@ -1,13 +1,11 @@
 package com.herokuapp.theinternet.base;
 
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import org.apache.logging.log4j.Logger;
-
-import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -29,41 +27,28 @@ public class BrowserDriverFactory {
 
         switch (browser) {
             case "chrome":
-//                System.setProperty("webdriver.chrome.driver", PathUtils.getFullPath("/chromedriver.exe"));
                 driver.set(new ChromeDriver());
                 break;
 
             case "firefox":
-//                System.setProperty("webdriver.chrome.driver", PathUtils.getFullPath("/geckodriver.exe"));
                 driver.set(new FirefoxDriver());
                 break;
 
             default:
-//                System.out.println("Do not know how to start: " + browser + ", starting chrome.");
-//                System.setProperty("webdriver.chrome.driver", "C:\\Users\\yteren\\IdeaProjects\\advancedSelenium\\src\\main\\resources\\chromedriver.exe");
                 driver.set(new ChromeDriver());
                 break;
         }
         return driver.get();
-        }
-
-        public WebDriver createChromeWithProfile(String profile) {
-        log.info("Starting chrome driver with profile: " + profile);
-            ChromeOptions chromeOptions = new ChromeOptions();
-            chromeOptions.addArguments("C:\\Users\\yteren\\IdeaProjects\\advancedSelenium\\src\\main\\resources\\Profiles" + profile);
-//            System.setProperty("webdriver.chrome.driver","C:\\Users\\yteren\\IdeaProjects\\advancedSelenium\\src\\main\\resources\\chromedriver.exe");
-            driver.set(new ChromeDriver(chromeOptions));
-            return driver.get();
-        }
-        public WebDriver createChromeWithMobileEmulation(String deviceName) {
-        log.info("Starting driver with " + deviceName + " emulation]");
-            Map<String,String> mobileEmulation = new HashMap<>();
-            mobileEmulation.put("deviceName", deviceName);
-            ChromeOptions chromeOptions = new ChromeOptions();
-            chromeOptions.setExperimentalOption("mobileEmulation", mobileEmulation);
-//            System.setProperty("webdriver.chrome.driver","C:\\Users\\yteren\\IdeaProjects\\advancedSelenium\\src\\main\\resources\\chromedriver.exe");
-            driver.set(new ChromeDriver(chromeOptions));
-            return driver.get();
-        }
     }
+
+    public WebDriver createChromeWithMobileEmulation(String deviceName) {
+        log.info("Starting driver with " + deviceName + " emulation]");
+        Map<String, String> mobileEmulation = new HashMap<>();
+        mobileEmulation.put("deviceName", deviceName);
+        ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.setExperimentalOption("mobileEmulation", mobileEmulation);
+        driver.set(new ChromeDriver(chromeOptions));
+        return driver.get();
+    }
+}
 

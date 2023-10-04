@@ -12,7 +12,6 @@ import java.lang.reflect.Method;
 public class BaseTest {
     protected WebDriver driver;
     protected Logger log;
-
     protected String testSuiteName;
     protected String testName;
     protected String testMethodName;
@@ -25,9 +24,7 @@ public class BaseTest {
         log = LogManager.getLogger(testName);
 
         BrowserDriverFactory factory = new BrowserDriverFactory(browser, log);
-        if (profile != null) {
-            driver = factory.createChromeWithProfile(profile);
-        } else if (deviceName != null) {
+        if (deviceName != null) {
             driver = factory.createChromeWithMobileEmulation(deviceName);
         } else {
             driver = factory.createDriver();
