@@ -29,18 +29,18 @@ public class BrowserDriverFactory {
 
         switch (browser) {
             case "chrome":
-                System.setProperty("webdriver.chrome.driver", PathUtils.getFullPath("/chromedriver.exe"));
+//                System.setProperty("webdriver.chrome.driver", PathUtils.getFullPath("/chromedriver.exe"));
                 driver.set(new ChromeDriver());
                 break;
 
             case "firefox":
-                System.setProperty("webdriver.chrome.driver", PathUtils.getFullPath("/geckodriver.exe"));
+//                System.setProperty("webdriver.chrome.driver", PathUtils.getFullPath("/geckodriver.exe"));
                 driver.set(new FirefoxDriver());
                 break;
 
             default:
-                System.out.println("Do not know how to start: " + browser + ", starting chrome.");
-                System.setProperty("webdriver.chrome.driver", "C:\\Users\\yteren\\IdeaProjects\\advancedSelenium\\src\\main\\resources\\chromedriver.exe");
+//                System.out.println("Do not know how to start: " + browser + ", starting chrome.");
+//                System.setProperty("webdriver.chrome.driver", "C:\\Users\\yteren\\IdeaProjects\\advancedSelenium\\src\\main\\resources\\chromedriver.exe");
                 driver.set(new ChromeDriver());
                 break;
         }
@@ -51,7 +51,7 @@ public class BrowserDriverFactory {
         log.info("Starting chrome driver with profile: " + profile);
             ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.addArguments("C:\\Users\\yteren\\IdeaProjects\\advancedSelenium\\src\\main\\resources\\Profiles" + profile);
-            System.setProperty("webdriver.chrome.driver","C:\\Users\\yteren\\IdeaProjects\\advancedSelenium\\src\\main\\resources\\chromedriver.exe");
+//            System.setProperty("webdriver.chrome.driver","C:\\Users\\yteren\\IdeaProjects\\advancedSelenium\\src\\main\\resources\\chromedriver.exe");
             driver.set(new ChromeDriver(chromeOptions));
             return driver.get();
         }
@@ -61,7 +61,7 @@ public class BrowserDriverFactory {
             mobileEmulation.put("deviceName", deviceName);
             ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.setExperimentalOption("mobileEmulation", mobileEmulation);
-            System.setProperty("webdriver.chrome.driver","C:\\Users\\yteren\\IdeaProjects\\advancedSelenium\\src\\main\\resources\\chromedriver.exe");
+//            System.setProperty("webdriver.chrome.driver","C:\\Users\\yteren\\IdeaProjects\\advancedSelenium\\src\\main\\resources\\chromedriver.exe");
             driver.set(new ChromeDriver(chromeOptions));
             return driver.get();
         }
