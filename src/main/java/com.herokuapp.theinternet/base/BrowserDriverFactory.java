@@ -11,6 +11,8 @@ import java.util.Map;
 
 public class BrowserDriverFactory {
     private ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+
+
     private String browser;
     private Logger log;
 
@@ -21,13 +23,15 @@ public class BrowserDriverFactory {
         this.log = log;
     }
 
+
     public WebDriver createDriver() {
         log.info("Create driver: " + browser);
 
 
         switch (browser) {
             case "chrome":
-                driver.set(new ChromeDriver());
+                ChromeOptions chromeOptions = new ChromeOptions();
+                driver.set(new ChromeDriver(chromeOptions));
                 break;
 
             case "firefox":
