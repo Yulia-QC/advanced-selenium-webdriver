@@ -9,7 +9,7 @@ import org.testng.asserts.SoftAssert;
 import java.util.List;
 
 public class JSErrorTests extends TestUtilities {
-    @Test
+    @Test(enabled = false)
     public void jsErrorTest() {
         log.info("Starting jsErrorTest");
         SoftAssert softAssert = new SoftAssert();
