@@ -1,8 +1,11 @@
 package com.herokuapp.theinternet.pages;
 
+import com.herokuapp.theinternet.base.PathUtils;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+
+import java.io.File;
 
 public class UploadPage extends BasePageObject{
     private String pageUrl = "http://the-internet.herokuapp.com/upload";
@@ -21,7 +24,7 @@ public class UploadPage extends BasePageObject{
     }
     public void selectFile(String fileName){
         log.info("Selecting '" + fileName + "' file from Files folder.");
-        String filePath = System.getProperty("user.dir") + "\\src\\main\\resources\\files\\" + fileName;
+        String filePath = PathUtils.getFullPath("/files/"+fileName);
         type(filePath,choseFileLocator);
         log.info("File selected");
 
