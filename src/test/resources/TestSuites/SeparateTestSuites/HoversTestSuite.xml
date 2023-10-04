@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="HoversTestSuite" verbose="1">
+    <test name="HoversTests">
+        <classes>
+            <class name="com.herokuapp.theinternet.hoverspagetests.HoversTests"></class>
+        </classes>
+    </test>
+</suite>
