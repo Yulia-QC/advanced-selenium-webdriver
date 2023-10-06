@@ -1,4 +1,4 @@
-package com.herokuapp.theinternet.dropdownpagetests;
+package com.herokuapp.theinternet.SUT.dropdownpagetests;
 
 import com.herokuapp.theinternet.base.TestUtilities;
 import com.herokuapp.theinternet.pages.DropdownPage;

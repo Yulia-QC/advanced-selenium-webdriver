@@ -2,7 +2,7 @@
 <suite name="AlertsTestSuite" verbose="1">
     <test name="AlertsTests">
         <classes>
-            <class name="com.herokuapp.theinternet.alertspagetests.AlertsTests"></class>
+            <class name="com.herokuapp.theinternet.SUT.alertspagetests.AlertsTests"></class>
         </classes>
     </test>
 </suite>

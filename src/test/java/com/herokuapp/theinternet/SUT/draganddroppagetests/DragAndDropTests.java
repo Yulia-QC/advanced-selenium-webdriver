@@ -1,4 +1,4 @@
-package com.herokuapp.theinternet.draganddroppagetests;
+package com.herokuapp.theinternet.SUT.draganddroppagetests;
 
 import com.herokuapp.theinternet.base.TestUtilities;
 import com.herokuapp.theinternet.pages.DragAndDropPage;

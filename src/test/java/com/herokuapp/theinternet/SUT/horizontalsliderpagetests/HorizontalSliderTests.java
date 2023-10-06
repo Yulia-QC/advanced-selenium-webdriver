@@ -1,4 +1,4 @@
-package com.herokuapp.theinternet.horizontalsliderpagetests;
+package com.herokuapp.theinternet.SUT.horizontalsliderpagetests;
 
 import com.herokuapp.theinternet.base.TestUtilities;
 import com.herokuapp.theinternet.pages.HorizontalSliderPage;

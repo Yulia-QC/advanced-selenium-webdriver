@@ -4,7 +4,7 @@
 
     <test name="WindowsTests">
         <classes>
-            <class name="com.herokuapp.theinternet.windowspagetests.WindowsTests"/>
+            <class name="com.herokuapp.theinternet.SUT.windowspagetests.WindowsTests"/>
         </classes>
     </test>
 

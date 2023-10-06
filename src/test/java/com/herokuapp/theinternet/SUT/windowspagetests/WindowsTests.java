@@ -1,4 +1,4 @@
-package com.herokuapp.theinternet.windowspagetests;
+package com.herokuapp.theinternet.SUT.windowspagetests;
 
 import com.herokuapp.theinternet.base.TestUtilities;
 import com.herokuapp.theinternet.pages.NewWindowPage;

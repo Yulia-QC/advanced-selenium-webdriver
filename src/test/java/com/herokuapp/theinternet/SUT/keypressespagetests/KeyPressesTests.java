@@ -1,4 +1,4 @@
-package com.herokuapp.theinternet.keypressespagetests;
+package com.herokuapp.theinternet.SUT.keypressespagetests;
 
 import com.herokuapp.theinternet.base.TestUtilities;
 import com.herokuapp.theinternet.pages.KeyPressesPage;

@@ -2,7 +2,7 @@
 <suite name="DragAndDropSuite" verbose="1">
     <test name="DragAndDropTests">
         <classes>
-            <class name="com.herokuapp.theinternet.draganddroppagetests.DragAndDropTests"></class>
+            <class name="com.herokuapp.theinternet.SUT.draganddroppagetests.DragAndDropTests"></class>
         </classes>
     </test>
 </suite>

@@ -1,4 +1,4 @@
-package com.herokuapp.theinternet.jserrortests;
+package com.herokuapp.theinternet.SUT.jserrortests;
 
 import com.herokuapp.theinternet.base.TestUtilities;
 import com.herokuapp.theinternet.pages.JSErrorPage;

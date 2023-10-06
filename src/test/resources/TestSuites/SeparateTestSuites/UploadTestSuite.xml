@@ -4,7 +4,7 @@
 
     <test name="UploadTest">
         <classes>
-            <class name="com.herokuapp.theinternet.uploadpagetests.UploadTests"/>
+            <class name="com.herokuapp.theinternet.SUT.uploadpagetests.UploadTests"/>
         </classes>
     </test>
 

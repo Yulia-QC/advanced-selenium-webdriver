@@ -7,17 +7,17 @@
 
     <test name="PositiveLoginTests">
         <classes>
-            <class name="com.herokuapp.theinternet.loginpagetests.PositiveLoginTests"></class>
+            <class name="com.herokuapp.theinternet.SUT.loginpagetests.PositiveLoginTests"></class>
         </classes>
     </test>
     <test name="AlertsTests">
         <classes>
-            <class name="com.herokuapp.theinternet.alertspagetests.AlertsTests"></class>
+            <class name="com.herokuapp.theinternet.SUT.alertspagetests.AlertsTests"></class>
         </classes>
     </test>
     <test name="UploadTest">
         <classes>
-            <class name="com.herokuapp.theinternet.uploadpagetests.UploadTests"/>
+            <class name="com.herokuapp.theinternet.SUT.uploadpagetests.UploadTests"/>
         </classes>
     </test>
 </suite>

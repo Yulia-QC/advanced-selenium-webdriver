@@ -1,4 +1,4 @@
-package com.herokuapp.theinternet.loginpagetests;
+package com.herokuapp.theinternet.SUT.loginpagetests;
 
 import com.herokuapp.theinternet.base.CsvDataProviders;
 import com.herokuapp.theinternet.base.TestUtilities;

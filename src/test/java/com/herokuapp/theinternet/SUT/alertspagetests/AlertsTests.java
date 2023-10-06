@@ -1,4 +1,4 @@
-package com.herokuapp.theinternet.alertspagetests;
+package com.herokuapp.theinternet.SUT.alertspagetests;
 
 import com.herokuapp.theinternet.base.TestUtilities;
 import com.herokuapp.theinternet.pages.JavaScriptAlertsPage;

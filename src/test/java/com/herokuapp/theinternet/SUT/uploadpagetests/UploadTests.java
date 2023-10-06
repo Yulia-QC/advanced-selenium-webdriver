@@ -1,4 +1,4 @@
-package com.herokuapp.theinternet.uploadpagetests;
+package com.herokuapp.theinternet.SUT.uploadpagetests;
 
 import com.herokuapp.theinternet.base.TestUtilities;
 import com.herokuapp.theinternet.pages.UploadPage;

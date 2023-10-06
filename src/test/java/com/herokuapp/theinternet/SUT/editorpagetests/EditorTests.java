@@ -1,4 +1,4 @@
-package com.herokuapp.theinternet.editorpagetests;
+package com.herokuapp.theinternet.SUT.editorpagetests;
 
 import com.herokuapp.theinternet.base.TestUtilities;
 import com.herokuapp.theinternet.pages.EditorPage;

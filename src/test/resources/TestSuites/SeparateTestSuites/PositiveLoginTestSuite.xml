@@ -4,14 +4,14 @@
 
 	<test name="PositiveLoginTest-WoPr">
 		<classes>
-			<class name="com.herokuapp.theinternet.loginpagetests.PositiveLoginTests" />
+			<class name="com.herokuapp.theinternet.SUT.loginpagetests.PositiveLoginTests" />
 		</classes>
 	</test>
 
 	<test name="PositiveLoginTest-WPr">
 		<parameter name="chromeProfile" value="ChromeProfile"></parameter>
 		<classes>
-			<class name="com.herokuapp.theinternet.loginpagetests.PositiveLoginTests" />
+			<class name="com.herokuapp.theinternet.SUT.loginpagetests.PositiveLoginTests" />
 		</classes>
 	</test>
 	

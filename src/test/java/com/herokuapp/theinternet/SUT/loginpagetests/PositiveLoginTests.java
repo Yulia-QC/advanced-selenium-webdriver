@@ -1,4 +1,4 @@
-package com.herokuapp.theinternet.loginpagetests;
+package com.herokuapp.theinternet.SUT.loginpagetests;
 
 import com.herokuapp.theinternet.base.TestUtilities;
 import com.herokuapp.theinternet.pages.LoginPage;

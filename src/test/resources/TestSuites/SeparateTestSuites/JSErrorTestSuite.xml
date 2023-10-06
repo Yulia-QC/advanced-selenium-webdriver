@@ -2,7 +2,7 @@
 <suite name="JSErrorTestSuite" verbose="1">
     <test name="JSErrorTests">
         <classes>
-            <class name="com.herokuapp.theinternet.jserrortests.JSErrorTests"></class>
+            <class name="com.herokuapp.theinternet.SUT.jserrortests.JSErrorTests"></class>
         </classes>
     </test>
 </suite>

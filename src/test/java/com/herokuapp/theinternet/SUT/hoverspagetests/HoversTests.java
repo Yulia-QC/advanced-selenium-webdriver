@@ -1,4 +1,4 @@
-package com.herokuapp.theinternet.hoverspagetests;
+package com.herokuapp.theinternet.SUT.hoverspagetests;
 
 import com.herokuapp.theinternet.base.TestUtilities;
 import com.herokuapp.theinternet.pages.HoversPage;

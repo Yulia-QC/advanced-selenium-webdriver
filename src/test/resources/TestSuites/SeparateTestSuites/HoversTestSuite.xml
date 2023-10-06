@@ -2,7 +2,7 @@
 <suite name="HoversTestSuite" verbose="1">
     <test name="HoversTests">
         <classes>
-            <class name="com.herokuapp.theinternet.hoverspagetests.HoversTests"></class>
+            <class name="com.herokuapp.theinternet.SUT.hoverspagetests.HoversTests"></class>
         </classes>
     </test>
 </suite>

@@ -1,4 +1,4 @@
-package com.herokuapp.theinternet.checkboxespagetests;
+package com.herokuapp.theinternet.SUT.checkboxespagetests;
 
 import com.herokuapp.theinternet.base.TestUtilities;
 import com.herokuapp.theinternet.pages.CheckboxesPage;

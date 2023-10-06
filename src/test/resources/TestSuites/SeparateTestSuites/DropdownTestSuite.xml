@@ -2,7 +2,7 @@
 <suite name="DropdownTestSuite" verbose="1">
     <test name="DropdownTest">
         <classes>
-            <class name="com.herokuapp.theinternet.dropdownpagetests.DropdownTests"></class>
+            <class name="com.herokuapp.theinternet.SUT.dropdownpagetests.DropdownTests"></class>
         </classes>
     </test>
 </suite>
