@@ -33,7 +33,7 @@ jobs:
     - name: Build with Maven
       run: mvn clean install package --file pom.xml -DsuiteFile=SmokeTestSuite
     - name: Unit Test
-      run: mvn test -Dtest=UnitTestSuite
+      run: mvn test -Dtest=PathUtilsTest
     - name: Full Test
       run: mvn test
 
