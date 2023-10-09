@@ -4,12 +4,13 @@ import com.herokuapp.theinternet.base.TestUtilities;
 import com.herokuapp.theinternet.pages.LoginPage;
 import com.herokuapp.theinternet.pages.SecureAreaPage;
 import com.herokuapp.theinternet.pages.WelcomePage;
+import io.qameta.allure.Description;
 import org.openqa.selenium.Cookie;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class PositiveLoginTests extends TestUtilities {
-
+    @Description("Main test")
     @Test
     public void logInTest() {
 

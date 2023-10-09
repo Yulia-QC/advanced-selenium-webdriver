@@ -10,8 +10,8 @@ import java.lang.reflect.Method;
 
 @Listeners({com.herokuapp.theinternet.base.TestListener.class})
 public class BaseTest {
-    protected WebDriver driver;
-    protected Logger log;
+     public WebDriver driver;
+     public Logger log;
     protected String testSuiteName;
     protected String testName;
     protected String testMethodName;

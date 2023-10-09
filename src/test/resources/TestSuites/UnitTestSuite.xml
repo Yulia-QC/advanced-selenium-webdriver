@@ -5,9 +5,14 @@
         <listener class-name="com.herokuapp.theinternet.base.TestListener"></listener>
     </listeners>
 
-    <test name="PositiveLoginTests">
+    <test name="PathUtilsTest">
         <classes>
             <class name="com.herokuapp.theinternet.unit.PathUtilsTest"></class>
+        </classes>
+    </test>
+    <test name="BaseTestTest">
+        <classes>
+            <class name="com.herokuapp.theinternet.unit.BaseTestTest"></class>
         </classes>
     </test>
 </suite>

@@ -49,6 +49,38 @@
 			<version>2.13.0</version>
 		</dependency>
 
+		<!---Reports-->
+		<dependency>
+			<groupId>io.qameta.allure</groupId>
+			<artifactId>allure-testng</artifactId>
+			<version>2.19.0</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+			<version>1.9.9.1</version>
+		</dependency>
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>5.3.1</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/kr.motd.maven/os-maven-plugin -->
+		<dependency>
+			<groupId>kr.motd.maven</groupId>
+			<artifactId>os-maven-plugin</artifactId>
+			<version>1.7.1</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.github.webdriverextensions/webdriverextensions-maven-plugin -->
+		<dependency>
+			<groupId>com.github.webdriverextensions</groupId>
+			<artifactId>webdriverextensions-maven-plugin</artifactId>
+			<version>3.4.0</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -67,7 +99,13 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.1.2</version>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>3.3.1</version>
+			</plugin>
 		</plugins>
+
 	</build>
 
 
