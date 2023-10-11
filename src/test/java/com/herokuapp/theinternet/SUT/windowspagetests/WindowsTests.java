@@ -19,7 +19,7 @@ public class WindowsTests extends TestUtilities {
 
         //click 'Click Here' link to open new window
         windowsPage.openNewWindow();
-        sleep(1000);
+
         //find and switch to new window page
         NewWindowPage newWindowPage = windowsPage.switchToNewWindowPage();
 

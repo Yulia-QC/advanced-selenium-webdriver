@@ -1,5 +1,6 @@
 package com.herokuapp.theinternet.SUT.jserrortests;
 
+import com.herokuapp.theinternet.base.PathUtils;
 import com.herokuapp.theinternet.base.TestUtilities;
 import com.herokuapp.theinternet.pages.JSErrorPage;
 import io.qameta.allure.Allure;
@@ -29,7 +30,7 @@ public class JSErrorTests extends TestUtilities {
         jsErrorPage.openPage();
         //get logs
         List<LogEntry> logs = getBrowserLogs();
-        InputStream is = new FileInputStream("C:\\Users\\yteren\\IdeaProjects\\advancedSelenium\\src\\test\\resources\\files\\test.jpg");
+        InputStream is = new FileInputStream(PathUtils.getFullPath("/files/text.txt"));
         Allure.addAttachment("Screenshot",is);
 
         //verify there are no JavaScript errors in console

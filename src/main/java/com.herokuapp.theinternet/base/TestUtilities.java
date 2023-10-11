@@ -15,15 +15,6 @@ import java.util.List;
 
 public class TestUtilities extends BaseTest {
 
-    //STATIC SLEEP (not recommended, just to visualize test running if needed)
-    protected void sleep(long millis) {
-        try {
-            Thread.sleep(millis);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
-
     @DataProvider(name="files")
     protected static Object[][] files() {
         return new Object[][] {
@@ -33,7 +24,6 @@ public class TestUtilities extends BaseTest {
         };
     }
 
-    /** Take screenshot */
     protected void takeScreenshot(String fileName) {
         File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         String path = System.getProperty("user.dir")
@@ -53,6 +43,7 @@ public class TestUtilities extends BaseTest {
     }
 
     private String getSystemTime() {
+
         return (new SimpleDateFormat("HHmmssSSS").format(new Date()));
     }
 
