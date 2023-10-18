@@ -14,7 +14,6 @@ public class KeyPressesPage extends BasePageObject {
     private String pageUrl = "http://the-internet.herokuapp.com/key_presses";
 
     public KeyPressesPage(WebDriver driver, Logger log) {
-
         super(driver, log);
     }
 

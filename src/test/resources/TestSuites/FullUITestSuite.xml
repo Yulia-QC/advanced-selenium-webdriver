@@ -1,11 +1,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="FullUITestSuite" verbose="1" parallel="tests" thread-count="4">
+<suite name="FullUITestSuite" verbose="1" parallel="tests" thread-count="13">
 
     <test name="PositiveTest-CH">
         <parameter name="browser" value="chrome"></parameter>
         <classes>
-            <class name="com.herokuapp.theinternet.SUT.loginpagetests.PositiveLoginTests" />
+            <class name="com.herokuapp.theinternet.SUT.loginpagetests.PositiveLoginTests"/>
         </classes>
     </test>
 
@@ -50,16 +50,18 @@
         </classes>
     </test>
 
-        <test name="AlertsTests">
-            <classes>
-                <class name="com.herokuapp.theinternet.SUT.alertspagetests.AlertsTests"></class>
-            </classes>
-        </test>
+    <test name="AlertsTests">
+        <classes>
+            <class name="com.herokuapp.theinternet.SUT.alertspagetests.AlertsTests"></class>
+        </classes>
+    </test>
+
     <test name="WindowsTests">
         <classes>
             <class name="com.herokuapp.theinternet.SUT.windowspagetests.WindowsTests"/>
         </classes>
     </test>
+
     <test name="EditorTests">
         <classes>
             <class name="com.herokuapp.theinternet.SUT.editorpagetests.EditorTests"></class>

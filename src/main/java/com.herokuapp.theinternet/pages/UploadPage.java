@@ -14,7 +14,6 @@ public class UploadPage extends BasePageObject{
     private By uploadButtonLocator = By.id("file-submit");
     private By uploadFilesLocator = By.id("uploaded-files");
     public UploadPage(WebDriver driver, Logger log) {
-
         super(driver, log);
     }
     public void openPage() {

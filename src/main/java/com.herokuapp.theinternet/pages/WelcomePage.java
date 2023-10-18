@@ -17,7 +17,6 @@ public class WelcomePage extends BasePageObject {
     private By upploadLinkLocator = By.linkText("File Upload");
 
     public WelcomePage(WebDriver driver, Logger log) {
-
         super(driver,log);
     }
 

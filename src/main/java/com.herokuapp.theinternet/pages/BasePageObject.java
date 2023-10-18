@@ -52,6 +52,7 @@ public class BasePageObject {
     }
 
     public String getCurrentPageTitle() {
+
         return driver.getTitle();
     }
 

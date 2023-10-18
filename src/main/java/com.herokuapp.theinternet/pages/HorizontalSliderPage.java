@@ -10,7 +10,6 @@ public class HorizontalSliderPage extends BasePageObject{
     private By rangeLocator = By.id("range");
     private By sliderLocator = By.tagName("input");
     public HorizontalSliderPage(WebDriver driver, Logger log) {
-
         super(driver, log);
     }
     public void openPage() {
